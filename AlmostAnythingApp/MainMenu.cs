@@ -23,5 +23,12 @@ namespace AlmostAnythingApp
         {
             this.Dispose();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            TicTacToe ticTacToe = new TicTacToe();
+            ticTacToe.Show();
+            this.Hide();
+        }
     }
 }
