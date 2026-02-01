@@ -37,6 +37,7 @@
             button7 = new Button();
             button8 = new Button();
             button9 = new Button();
+            label1 = new Label();
             SuspendLayout();
             // 
             // button1
@@ -129,11 +130,22 @@
             button9.UseVisualStyleBackColor = true;
             button9.Click += button9_Click;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(634, 50);
+            label1.Name = "label1";
+            label1.Size = new Size(50, 20);
+            label1.TabIndex = 9;
+            label1.Text = "label1";
+            label1.Click += label1_Click;
+            // 
             // TicTacToe
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(label1);
             Controls.Add(button9);
             Controls.Add(button8);
             Controls.Add(button7);
@@ -146,6 +158,7 @@
             Name = "TicTacToe";
             Text = "TicTacToe";
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -159,5 +172,6 @@
         private Button button7;
         private Button button8;
         private Button button9;
+        private Label label1;
     }
 }

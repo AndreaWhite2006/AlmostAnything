@@ -30,5 +30,12 @@ namespace AlmostAnythingApp
             ticTacToe.Show();
             this.Hide();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            UnitConverter UC = new UnitConverter();
+            this.Hide();
+            UC.Show();
+        }
     }
 }
